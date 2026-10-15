@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5ecdf" />
+    <meta name="description" content="Oitrika is a second-year BTech CSE student building web apps and AI projects." />
+    <title>Oitrika — CSE Student & Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- The header keeps the primary navigation and theme control available on every page. -->
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Oitrika, home">O<span>.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="3.5" />
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <!-- The hero introduces the portfolio and points visitors toward selected work. -->
+      <section class="hero page-width" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> 2ND YEAR BTECH CSE STUDENT</p>
+          <h1 id="hero-title">Oitrika builds for <span>the web.</span></h1>
+          <p class="hero-intro">2nd year BTech CSE student building web apps and AI projects.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="https://github.com/triixdev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="hero-focus"><span>FOCUS</span> AI/ML <span class="location-divider">/</span> Web development</p>
+        </div>
+        <figure class="hero-visual">
+          <svg viewBox="0 0 720 620" role="img" aria-labelledby="hero-art-title" xmlns="http://www.w3.org/2000/svg">
+            <title id="hero-art-title">Code editor window with sample code</title>
+            <rect width="720" height="620" fill="var(--surface)" />
+            <circle cx="610" cy="95" r="42" fill="var(--accent)" opacity=".22" />
+            <path d="M0 500c116-74 188-66 294 2s196 72 426-30v148H0Z" fill="var(--accent)" opacity=".12" />
+            <rect x="92" y="83" width="536" height="430" rx="16" fill="var(--paper)" stroke="var(--line)" stroke-width="2" />
+            <path d="M92 137h536" stroke="var(--line)" stroke-width="2" />
+            <circle cx="124" cy="110" r="6" fill="var(--accent)" />
+            <circle cx="146" cy="110" r="6" fill="var(--muted)" opacity=".65" />
+            <circle cx="168" cy="110" r="6" fill="var(--line)" />
+            <rect x="112" y="159" width="112" height="324" rx="7" fill="var(--surface)" />
+            <rect x="130" y="181" width="70" height="8" rx="4" fill="var(--accent)" opacity=".72" />
+            <rect x="130" y="207" width="52" height="7" rx="3.5" fill="var(--muted)" opacity=".62" />
+            <rect x="130" y="230" width="66" height="7" rx="3.5" fill="var(--muted)" opacity=".42" />
+            <rect x="130" y="276" width="58" height="7" rx="3.5" fill="var(--muted)" opacity=".62" />
+            <rect x="130" y="299" width="74" height="7" rx="3.5" fill="var(--muted)" opacity=".42" />
+            <text x="252" y="199" fill="var(--muted)" font-family="DM Mono, monospace" font-size="14">01</text>
+            <text x="284" y="199" fill="var(--accent)" font-family="DM Mono, monospace" font-size="17">const</text>
+            <text x="340" y="199" fill="var(--ink)" font-family="DM Mono, monospace" font-size="17">idea = build();</text>
+            <text x="252" y="244" fill="var(--muted)" font-family="DM Mono, monospace" font-size="14">02</text>
+            <text x="284" y="244" fill="var(--ink)" font-family="DM Mono, monospace" font-size="17">if (idea.isUseful) {</text>
+            <text x="252" y="289" fill="var(--muted)" font-family="DM Mono, monospace" font-size="14">03</text>
+            <text x="302" y="289" fill="var(--accent)" font-family="DM Mono, monospace" font-size="17">ship</text>
+            <text x="342" y="289" fill="var(--ink)" font-family="DM Mono, monospace" font-size="17">(idea);</text>
+            <text x="252" y="334" fill="var(--muted)" font-family="DM Mono, monospace" font-size="14">04</text>
+            <text x="284" y="334" fill="var(--ink)" font-family="DM Mono, monospace" font-size="17">}</text>
+            <rect x="284" y="379" width="198" height="8" rx="4" fill="var(--line)" />
+            <rect x="284" y="402" width="128" height="8" rx="4" fill="var(--line)" opacity=".7" />
+            <rect x="284" y="447" width="72" height="8" rx="4" fill="var(--accent)" opacity=".65" />
+          </svg>
+          <figcaption><span>01 — 04</span> A little bit of everything, on purpose.</figcaption>
+          <span class="visual-stamp" aria-hidden="true">IDEAS<br />IN MOTION</span>
+        </figure>
+        <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <!-- A short, personal introduction gives context to the work below. -->
+      <section class="about section-band" id="about" aria-labelledby="about-title">
+        <div class="section-inner page-width about-grid">
+          <p class="eyebrow section-index">01 / A LITTLE ABOUT ME</p>
+          <div class="about-copy">
+              <h2 id="about-title">Curiosity, code & <span>creation.</span></h2>
+              <p class="about-lead">I’m a 2nd year CSE student specializing in AI/ML. I like building web projects and taking part in hackathons.</p>
+              <a class="text-link" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="about-note"><span class="note-mark">✳</span><p>Thoughtful by design.<br />Useful by default.</p></div>
+        </div>
+      </section>
+
+      <!-- Each project links directly to its GitHub repository and lists its technology stack. -->
+      <section class="projects page-width section-pad" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow section-index">02 / SELECTED WORK</p>
+            <h2 id="projects-title">A few things<br />I’ve <span>put out there.</span></h2>
+          </div>
+          <p class="section-aside">A small selection of recent collaborations<br />and experiments.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-card-tall">
+            <a class="project-image" href="https://github.com/triixdev/code-with-codespaces" target="_blank" rel="noopener noreferrer" aria-label="View Dev Container Setup on GitHub">
+              <svg viewBox="0 0 600 600" role="img" aria-labelledby="container-art-title" xmlns="http://www.w3.org/2000/svg">
+                <title id="container-art-title">Terminal and container box</title>
+                <rect width="600" height="600" fill="var(--surface)" />
+                <circle cx="500" cy="105" r="58" fill="var(--accent)" opacity=".14" />
+                <rect x="56" y="65" width="488" height="286" rx="15" fill="var(--paper)" stroke="var(--line)" stroke-width="2" />
+                <path d="M56 119h488" stroke="var(--line)" stroke-width="2" />
+                <circle cx="88" cy="92" r="6" fill="var(--accent)" />
+                <circle cx="110" cy="92" r="6" fill="var(--muted)" opacity=".65" />
+                <circle cx="132" cy="92" r="6" fill="var(--line)" />
+                <path d="m93 169 19 16-19 16m34 0h53m-87 39 19 16-19 16m34 0h89" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M165 169h218m-38 78h105" stroke="var(--muted)" stroke-width="5" stroke-linecap="round" opacity=".55" />
+                <path d="m300 384 111 63v101l-111-63-111 63V447Z" fill="var(--paper)" stroke="var(--accent)" stroke-width="4" stroke-linejoin="round" />
+                <path d="M300 384v101m111-38-111 63m-111-63 111 63" fill="none" stroke="var(--line)" stroke-width="4" stroke-linejoin="round" />
+                <path d="m300 384 111 63-111 63-111-63Z" fill="var(--accent)" opacity=".16" />
+                <path d="M300 384v101m111-38-111 63m-111-63 111 63" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linejoin="round" />
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>01 — CLOUD DEVELOPMENT</span><a href="https://github.com/triixdev/code-with-codespaces" target="_blank" rel="noopener noreferrer">VIEW REPO ↗</a></div>
+            <h3>Dev Container Setup</h3>
+            <p>A reproducible cloud development environment with a Debian base image, Python 3.10, VS Code extensions, and an automated post-create script.</p>
+            <p class="project-tech"><span>TECH</span> GitHub Codespaces · Dev Containers · Docker · Python · Bash</p>
+          </article>
+          <article class="project-card project-card-offset">
+            <a class="project-image" href="https://github.com/triixdev/introduction-to-repository-management" target="_blank" rel="noopener noreferrer" aria-label="View Repository Management Setup on GitHub">
+              <svg viewBox="0 0 600 600" role="img" aria-labelledby="repository-art-title" xmlns="http://www.w3.org/2000/svg">
+                <title id="repository-art-title">Git branch diagram and shield</title>
+                <rect width="600" height="600" fill="var(--surface)" />
+                <path d="M120 130v328m0-226c0 52 52 73 104 73h54m-158 66c0-52 52-73 104-73h54" fill="none" stroke="var(--muted)" stroke-width="8" stroke-linecap="round" />
+                <path d="M120 130v328m0-226c0 52 52 73 104 73h54m-158 66c0-52 52-73 104-73h54" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" />
+                <circle cx="120" cy="130" r="17" fill="var(--paper)" stroke="var(--accent)" stroke-width="7" />
+                <circle cx="120" cy="232" r="17" fill="var(--paper)" stroke="var(--accent)" stroke-width="7" />
+                <circle cx="120" cy="458" r="17" fill="var(--paper)" stroke="var(--accent)" stroke-width="7" />
+                <circle cx="278" cy="305" r="17" fill="var(--paper)" stroke="var(--accent)" stroke-width="7" />
+                <circle cx="278" cy="371" r="17" fill="var(--paper)" stroke="var(--accent)" stroke-width="7" />
+                <path d="m421 130 104 40v91c0 78-44 137-104 171-60-34-104-93-104-171v-91Z" fill="var(--paper)" stroke="var(--accent)" stroke-width="7" stroke-linejoin="round" />
+                <path d="m372 260 34 34 67-76" fill="none" stroke="var(--accent)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M355 470h132" stroke="var(--line)" stroke-width="8" stroke-linecap="round" />
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>02 — REPOSITORY MANAGEMENT</span><a href="https://github.com/triixdev/introduction-to-repository-management" target="_blank" rel="noopener noreferrer">VIEW REPO ↗</a></div>
+            <h3>Repository Management Setup</h3>
+            <p>Prepared a school activities website repo for safe team collaboration with branch rulesets, CODEOWNERS, contribution guidance, issue templates, Dependabot, CodeQL, and a security policy.</p>
+            <p class="project-tech"><span>TECH</span> GitHub Rulesets · Dependabot · CodeQL · GitHub Actions · Markdown · YAML</p>
+          </article>
+          <article class="project-card project-card-tall">
+            <a class="project-image" href="https://github.com/triixdev/copilot-portfolio" target="_blank" rel="noopener noreferrer" aria-label="View Personal Portfolio Website on GitHub">
+              <svg viewBox="0 0 600 600" role="img" aria-labelledby="portfolio-art-title" xmlns="http://www.w3.org/2000/svg">
+                <title id="portfolio-art-title">Browser window wireframe</title>
+                <rect width="600" height="600" fill="var(--surface)" />
+                <circle cx="105" cy="496" r="54" fill="var(--accent)" opacity=".13" />
+                <rect x="55" y="75" width="490" height="424" rx="16" fill="var(--paper)" stroke="var(--line)" stroke-width="2" />
+                <path d="M55 129h490" stroke="var(--line)" stroke-width="2" />
+                <circle cx="88" cy="102" r="6" fill="var(--accent)" />
+                <circle cx="110" cy="102" r="6" fill="var(--muted)" opacity=".65" />
+                <circle cx="132" cy="102" r="6" fill="var(--line)" />
+                <rect x="174" y="94" width="255" height="16" rx="8" fill="var(--surface)" />
+                <rect x="88" y="163" width="194" height="8" rx="4" fill="var(--accent)" opacity=".62" />
+                <rect x="88" y="190" width="246" height="25" rx="4" fill="var(--ink)" opacity=".84" />
+                <rect x="88" y="227" width="164" height="25" rx="4" fill="var(--accent)" />
+                <rect x="88" y="272" width="198" height="7" rx="3.5" fill="var(--muted)" opacity=".55" />
+                <rect x="88" y="291" width="172" height="7" rx="3.5" fill="var(--muted)" opacity=".38" />
+                <rect x="88" y="323" width="116" height="32" rx="3" fill="var(--accent)" opacity=".9" />
+                <rect x="341" y="162" width="164" height="212" rx="8" fill="var(--surface)" />
+                <rect x="359" y="180" width="128" height="123" rx="5" fill="var(--accent)" opacity=".2" />
+                <circle cx="423" cy="229" r="31" fill="var(--accent)" opacity=".55" />
+                <rect x="359" y="321" width="92" height="7" rx="3.5" fill="var(--muted)" opacity=".6" />
+                <rect x="359" y="340" width="122" height="7" rx="3.5" fill="var(--muted)" opacity=".4" />
+                <path d="M88 405h424" stroke="var(--line)" stroke-width="2" />
+                <rect x="88" y="429" width="112" height="48" rx="5" fill="var(--surface)" />
+                <rect x="214" y="429" width="112" height="48" rx="5" fill="var(--surface)" />
+                <rect x="340" y="429" width="112" height="48" rx="5" fill="var(--surface)" />
+              </svg>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>03 — WEB DEVELOPMENT</span><a href="https://github.com/triixdev/copilot-portfolio" target="_blank" rel="noopener noreferrer">VIEW REPO ↗</a></div>
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive portfolio website with a persistent dark/light theme toggle, built with the help of GitHub Copilot.</p>
+            <p class="project-tech"><span>TECH</span> HTML · CSS · JavaScript · GitHub Copilot · GitHub Pages</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills are grouped by how they show up in a typical project. -->
+      <section class="skills section-band" id="skills" aria-labelledby="skills-title">
+        <div class="section-inner page-width skills-layout">
+          <div class="skills-intro">
+            <p class="eyebrow section-index">03 / WHAT I BRING</p>
+            <h2 id="skills-title">Tools for<br /><span>building things.</span></h2>
+            <p>Skills I use across my web, AI/ML, and repository projects.</p>
+          </div>
+          <div class="skill-groups">
+            <div class="skill-group"><span class="skill-number">01</span><div><h3>AI & Web</h3><p>AI/ML · HTML · CSS · JavaScript · Python</p></div></div>
+            <div class="skill-group"><span class="skill-number">02</span><div><h3>Development Environments</h3><p>GitHub Codespaces · Dev Containers · Docker · Bash</p></div></div>
+            <div class="skill-group"><span class="skill-number">03</span><div><h3>GitHub & Automation</h3><p>GitHub Actions · Rulesets · Dependabot · CodeQL · GitHub Pages · Markdown · YAML · GitHub Copilot</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact is limited to the profile link the portfolio owner provided. -->
+      <section class="contact page-width" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow section-index">04 / YOUR TURN</p>
+        <div class="contact-content">
+          <h2 id="contact-title">Let’s build<br />something <span>good.</span></h2>
+          <div class="contact-cta">
+            <p>I’m happy to connect with fellow builders, talk about projects, or share ideas.</p>
+            <a class="button button-primary" href="https://github.com/triixdev" target="_blank" rel="noopener noreferrer">Visit my GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <a class="wordmark" href="#home" aria-label="Oitrika, back to top">O<span>.</span></a>
+          <p>Designed & built with care.</p>
+          <p>© <span id="current-year">2026</span> Oitrika</p>
+          <a class="back-top" href="#home">BACK TO TOP ↑</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
