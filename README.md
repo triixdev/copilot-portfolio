@@ -4,7 +4,6 @@ A responsive personal portfolio website built with HTML, CSS and JavaScript, gen
 
 **Live site:** https://triixdev.github.io/copilot-portfolio/
 
-![Portfolio screenshot](screenshot.png)
 
 ## Features
 - Hero, About, Projects, Skills and Contact sections
